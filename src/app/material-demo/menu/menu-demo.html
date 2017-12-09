@@ -1,0 +1,64 @@
+<div class="demo-menu">
+  <div class="menu-section">
+    <p>You clicked on: {{ selected }}</p>
+
+    <mat-toolbar>
+      <button mat-icon-button [mat-menu-trigger-for]="menu" aria-label="Open basic menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item *ngFor="let item of items" (click)="select(item.text)" [disabled]="item.disabled">
+        {{ item.text }}
+      </button>
+    </mat-menu>
+  </div>
+  <div class="menu-section">
+    <p> Clicking these will navigate:</p>
+    <mat-toolbar>
+      <button mat-icon-button [mat-menu-trigger-for]="anchorMenu" aria-label="Open anchor menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-menu #anchorMenu="matMenu">
+      <a mat-menu-item *ngFor="let item of items" href="http://www.google.com" [disabled]="item.disabled">
+        {{ item.text }}
+      </a>
+    </mat-menu>
+  </div>
+  <div class="menu-section">
+    <p>
+      Position x: before
+    </p>
+    <mat-toolbar class="end-icon">
+      <button mat-icon-button [mat-menu-trigger-for]="posXMenu" aria-label="Open x-positioned menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-menu x-position="before" #posXMenu="matMenu" class="before">
+      <button mat-menu-item *ngFor="let item of iconItems" [disabled]="item.disabled">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        {{ item.text }}
+      </button>
+    </mat-menu>
+  </div>
+  <div class="menu-section">
+    <p>
+      Position y: above
+    </p>
+    <mat-toolbar>
+      <button mat-icon-button [mat-menu-trigger-for]="posYMenu" aria-label="Open y-positioned menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-menu y-position="above" #posYMenu="matMenu">
+      <button mat-menu-item *ngFor="let item of items" [disabled]="item.disabled">
+        {{ item.text }}
+      </button>
+    </mat-menu>
+  </div>
+</div>

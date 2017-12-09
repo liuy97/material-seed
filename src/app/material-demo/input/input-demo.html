@@ -1,0 +1,293 @@
+<mat-card class="demo-card demo-basic">
+  <mat-toolbar color="primary">Basic</mat-toolbar>
+  <mat-card-content>
+    <form>
+      <mat-input-container class="demo-full-width">
+        <input matInput placeholder="Company (disabled)" disabled value="Google">
+      </mat-input-container>
+
+      <table style="width: 100%" cellspacing="0"><tr>
+        <td>
+          <mat-input-container style="width: 100%">
+            <input matInput placeholder="First name">
+          </mat-input-container>
+        </td>
+        <td>
+          <mat-input-container style="width: 100%">
+            <input matInput placeholder="Long Last Name That Will Be Truncated">
+          </mat-input-container>
+        </td>
+      </tr></table>
+      <p>
+        <mat-input-container class="demo-full-width">
+          <textarea matInput placeholder="Address">1600 Amphitheatre Pkway</textarea>
+        </mat-input-container>
+        <mat-input-container class="demo-full-width">
+          <textarea matInput placeholder="Address 2"></textarea>
+        </mat-input-container>
+      </p>
+      <table style="width: 100%" cellspacing="0"><tr>
+        <td>
+          <mat-input-container class="demo-full-width">
+            <input matInput placeholder="City" value="Mountain View">
+          </mat-input-container>
+        </td>
+        <td>
+          <mat-input-container class="demo-full-width">
+            <input matInput placeholder="State" maxLength="2" value="CA">
+          </mat-input-container>
+        </td>
+        <td>
+          <mat-input-container class="demo-full-width">
+            <input matInput #postalCode maxLength="5" placeholder="Postal Code" value="94043">
+            <mat-hint align="end">
+              <mat-icon>mode_edit</mat-icon>
+              {{ postalCode.value.length }} / 5
+            </mat-hint>
+          </mat-input-container>
+        </td>
+      </tr></table>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="demo-card demo-basic">
+  <mat-toolbar color="primary">Prefix + Suffix</mat-toolbar>
+  <mat-card-content>
+    <h4>Text</h4>
+    <mat-input-container align="end">
+      <input matInput placeholder="amount">
+      <span mdPrefix>$&nbsp;</span>
+      <span mdSuffix>.00</span>
+    </mat-input-container>
+
+    <h4>Icons</h4>
+    <mat-input-container>
+      <input matInput placeholder="amount">
+      <mat-icon mdPrefix>attach_money</mat-icon>
+      <mat-icon mdSuffix>mode_edit</mat-icon>
+    </mat-input-container>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="demo-card demo-basic">
+  <mat-toolbar color="primary">Divider Colors</mat-toolbar>
+  <mat-card-content>
+    <h4>Input</h4>
+    <mat-input-container dividerColor="primary" >
+      <input matInput placeholder="Default Color" value="example">
+    </mat-input-container>
+    <mat-input-container dividerColor="accent">
+      <input matInput placeholder="Accent Color" value="example">
+    </mat-input-container>
+    <mat-input-container dividerColor="warn">
+      <input matInput placeholder="Warn Color" value="example">
+    </mat-input-container>
+
+    <h4>Textarea</h4>
+    <mat-input-container dividerColor="primary">
+      <textarea matInput placeholder="Default Color">example</textarea>
+    </mat-input-container>
+    <mat-input-container dividerColor="accent">
+      <textarea matInput placeholder="Accent Color">example</textarea>
+    </mat-input-container>
+    <mat-input-container dividerColor="warn">
+      <textarea matInput placeholder="Warn Color">example</textarea>
+    </mat-input-container>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="demo-card demo-basic">
+  <mat-toolbar color="primary">Hints</mat-toolbar>
+  <mat-card-content>
+    <h4>Input</h4>
+    <p>
+      <mat-input-container class="demo-full-width">
+        <input matInput
+               #characterCountInputHintExample
+               placeholder="Character count (100 max)"
+               maxLength="100"
+               value="Hello world. How are you?">
+        <mat-hint align="end">{{ characterCountInputHintExample.value.length }} / 100</mat-hint>
+      </mat-input-container>
+    </p>
+
+    <h4>Textarea</h4>
+    <p>
+      <mat-input-container class="demo-full-width">
+        <textarea matInput
+                  #characterCountTextareaHintExample
+                  placeholder="Character count (100 max)"
+                  maxLength="100">Hello world. How are you?</textarea>
+        <mat-hint align="end">{{ characterCountTextareaHintExample.value.length }} / 100</mat-hint>
+      </mat-input-container>
+    </p>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="demo-card demo-basic">
+  <mat-toolbar color="primary">
+    Hello&nbsp;
+    <mat-input-container dividerColor="accent">
+      <input matInput [(ngModel)]="name" type="text" placeholder="First name">
+    </mat-input-container>,
+    how are you?
+  </mat-toolbar>
+  <mat-card-content>
+    <p>
+      <mat-input-container>
+        <input matInput disabled placeholder="Disabled field" value="Value">
+      </mat-input-container>
+      <mat-input-container>
+        <input matInput required placeholder="Required field">
+      </mat-input-container>
+    </p>
+    <p>
+      <mat-input-container style="width: 100%">
+        <input matInput placeholder="100% width placeholder">
+      </mat-input-container>
+    </p>
+    <p>
+      <mat-input-container style="width: 100%">
+        <input matInput #input placeholder="Character count (100 max)" maxLength="100">
+        <mat-hint align="end">{{ input.value.length }} / 100</mat-hint>
+      </mat-input-container>
+    </p>
+    <p>
+      <mat-input-container hintLabel="Hint label" style="width: 100%">
+        <input matInput placeholder="Show Hint Label">
+      </mat-input-container>
+    </p>
+
+    <p>
+      <mat-input-container>
+        <input matInput>
+        <mat-placeholder>
+          I <mat-icon>favorite</mat-icon> <b>bold</b> placeholder
+        </mat-placeholder>
+        <mat-hint>
+          I also <mat-icon>home</mat-icon> <i>italic</i> hint labels
+        </mat-hint>
+      </mat-input-container>
+    </p>
+    <p>
+      <mat-input-container hintLabel="Hint label" style="width: 100%">
+        <input matInput #hintLabelWithCharCount placeholder="Show Hint Label With Character Count">
+        <mat-hint align="end">{{ hintLabelWithCharCount.value.length }}</mat-hint>
+      </mat-input-container>
+    </p>
+    <p>
+      <mat-checkbox [(ngModel)]="dividerColor">Check to change the divider color:</mat-checkbox>
+      <mat-input-container [dividerColor]="dividerColor ? 'primary' : 'accent'">
+        <input matInput [placeholder]="dividerColor ? 'Primary color' : 'Accent color'">
+      </mat-input-container>
+    </p>
+    <p>
+      <mat-checkbox [(ngModel)]="requiredField"> Check to make required:</mat-checkbox>
+      <mat-input-container>
+        <input matInput
+               [required]="requiredField"
+               [placeholder]="requiredField ? 'Required field' : 'Not required field'">
+      </mat-input-container>
+    </p>
+    <p>
+      <mat-button-toggle-group [(ngModel)]="floatingLabel">
+        <mat-button-toggle value="auto">Auto Float</mat-button-toggle>
+        <mat-button-toggle value="always">Always Float</mat-button-toggle>
+        <mat-button-toggle value="never">Never Float</mat-button-toggle>
+      </mat-button-toggle-group>
+    </p>
+
+    <p>
+      <mat-input-container [floatPlaceholder]="floatingLabel">
+        <input matInput placeholder="Placeholder">
+      </mat-input-container>
+    </p>
+
+    <p>
+      <mat-input-container>
+        <input matInput placeholder="Prefixed" value="example">
+        <div mdPrefix>Example:&nbsp;</div>
+      </mat-input-container>
+      <mat-input-container align="end">
+        <input matInput placeholder="Suffixed" value="123">
+        <span mdSuffix>.00 €</span>
+      </mat-input-container>
+      <br/>
+      Both:
+      <mat-input-container align="end">
+        <input matInput #email placeholder="Email Address" value="angular-core">
+        <span mdPrefix><mat-icon [class.primary]="email.focused">email</mat-icon>&nbsp;</span>
+        <span mdSuffix [class.primary]="email.focused">&nbsp;@gmail.com</span>
+      </mat-input-container>
+    </p>
+
+    <p>
+      Empty: <mat-input-container><input matInput></mat-input-container>
+      <label>Label: <mat-input-container><input matInput></mat-input-container></label>
+    </p>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="demo-card demo-basic">
+  <mat-toolbar color="primary">Number Inputs</mat-toolbar>
+  <mat-card-content>
+    <table width="100%">
+      <thead>
+      <td>Table</td>
+      <td colspan="3">
+        <button (click)="addABunch(5)">Add 5</button>
+        <button (click)="addABunch(10)">Add 10</button>
+        <button (click)="addABunch(100)">Add 100</button>
+        <button (click)="addABunch(1000)">Add 1000</button>
+      </td>
+      </thead>
+      <tr *ngFor="let item of items; let i = index">
+        <td>{{ i+1 }}</td>
+        <td>
+          <mat-input-container>
+            <input matInput
+                   type="number"
+                   placeholder="value"
+                   aria-label="hello"
+                   [(ngModel)]="items[i].value">
+          </mat-input-container>
+        </td>
+        <td>
+          <input type="number" [(ngModel)]="items[i].value">
+        </td>
+        <td>{{ item.value }}</td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="demo-card demo-basic">
+  <mat-toolbar color="primary">Forms</mat-toolbar>
+  <!--mat-card-content>
+    <mat-input-container><input matInput placeholder="reactive" [formControl]="formControl"></mat-input-container>
+    <mat-input-container>
+      <input matInput placeholder="template" [(ngModel)]="model" required [disabled]="ctrlDisabled">
+    </mat-input-container>
+    <button mat-raised-button color="primary" (click)="formControl.enabled ? formControl.disable() : formControl.enable()">
+      DISABLE REACTIVE CTRL
+    </button>
+    <button mat-raised-button color="primary" (click)="ctrlDisabled = !ctrlDisabled">
+      DISABLE TD CTRL
+    </button>
+  </mat-card-content-->
+</mat-card>
+
+<mat-card class="demo-card demo-basic">
+  <mat-toolbar color="primary">Textarea Autosize</mat-toolbar>
+  <mat-card-content>
+    <textarea mdTextareaAutosize class="demo-textarea"></textarea>
+    <div>
+      <mat-input-container>
+        <textarea matInput
+                  mdTextareaAutosize
+                  placeholder="Autosized textarea"></textarea>
+      </mat-input-container>
+    </div>
+  </mat-card-content>
+</mat-card>

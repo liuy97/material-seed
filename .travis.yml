@@ -1,0 +1,23 @@
+language: node_js
+node_js: stable
+
+sudo: false
+
+os:
+  - linux
+  - osx
+
+before_script:
+  - npm install
+
+after_failure:
+  - cat /home/travis/build/liuy97/material-seed/npm-debug.log
+
+branches:
+  only: master
+
+cache:
+  directories: node_modules
+
+script:
+  - ng test -config=./karma.conf.ci.js && ng build --prod

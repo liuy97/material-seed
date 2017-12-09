@@ -1,0 +1,32 @@
+<h1>SnackBar demo</h1>
+<div>
+  <div>
+    Message: <!--mat-input-container><input mat-input type="text" [(ngModel)]="message"></mat-input-container-->
+  </div>
+  <div>
+    <mat-checkbox [(ngModel)]="action">
+      <p *ngIf="!action">Show button on snack bar</p>
+      <!--mat-input-container *ngIf="action">
+        <input mat-input
+               type="text"
+               class="demo-button-label-input"
+               placeholder="Snack bar action label"
+               [(ngModel)]="actionButtonLabel">
+      </mat-input-container-->
+    </mat-checkbox>
+  </div>
+  <div>
+    <mat-checkbox [(ngModel)]="setAutoHide">
+      <p *ngIf="!setAutoHide">Auto hide after duration</p>
+      <!--mat-input-container *ngIf="setAutoHide">
+        <input mat-input
+               type="number"
+               class="demo-button-label-input"
+               placeholder="Auto Hide Duration in ms"
+               [(ngModel)]="autoHide">
+      </mat-input-container-->
+    </mat-checkbox>
+  </div>
+</div>
+
+<button mat-raised-button (click)="open()">OPEN</button>
