@@ -1,4 +1,4 @@
-import { Overlay, OverlayOrigin, OverlayConfig } from '@angular/cdk/overlay';
+import { Overlay, CdkOverlayOrigin, OverlayConfig } from '@angular/cdk/overlay';
 import {
   ComponentPortal,
   // This import is only used to define a generic type. The current TypeScript version incorrectly
@@ -31,8 +31,8 @@ export class OverlayDemoComponent {
   tortelliniFillings = ['cheese and spinach', 'mushroom and broccoli'];
 
   @ViewChildren(TemplatePortalDirective) templatePortals: QueryList<Portal<any>>;
-  @ViewChild(OverlayOrigin) _overlayOrigin: OverlayOrigin;
-  @ViewChild('tortelliniOrigin') tortelliniOrigin: OverlayOrigin;
+  @ViewChild(CdkOverlayOrigin) _overlayOrigin: CdkOverlayOrigin;
+  @ViewChild('tortelliniOrigin') tortelliniOrigin: CdkOverlayOrigin;
   @ViewChild('tortelliniTemplate') tortelliniTemplate: TemplatePortalDirective;
 
   constructor(public overlay: Overlay, public viewContainerRef: ViewContainerRef) { }

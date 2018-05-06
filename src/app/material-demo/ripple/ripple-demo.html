@@ -27,12 +27,12 @@
     </mat-radio-group>
   </section>
   <section>
-    <mat-input-container>
+    <mat-form-field>
       <input matInput placeholder="Ripple radius" aria-label="radius" [(ngModel)]="radius">
-    </mat-input-container>
-    <mat-input-container>
+    </mat-form-field>
+    <mat-form-field>
       <input matInput placeholder="Ripple color" aria-label="color" [(ngModel)]="rippleColor">
-    </mat-input-container>
+    </mat-form-field>
   </section>
   <section>
     <button mat-raised-button (click)="launchRipple()">Launch Ripple</button>

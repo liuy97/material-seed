@@ -55,7 +55,7 @@ import { OverlayDemoComponent, SpagettiPanelComponent, RotiniPanelComponent } fr
 import { SlideToggleDemoComponent } from './slide-toggle/slide-toggle-demo';
 import { ToolbarDemoComponent } from './toolbar/toolbar-demo';
 import { ButtonDemoComponent } from './button/button-demo';
-import { MdCheckboxDemoNestedChecklistComponent, CheckboxDemoComponent } from './checkbox/checkbox-demo';
+import { MatCheckboxDemoNestedChecklistComponent, CheckboxDemoComponent } from './checkbox/checkbox-demo';
 import { SliderDemoComponent } from './slider/slider-demo';
 import { SidenavDemoComponent } from './sidenav/sidenav-demo';
 import { PortalDemoComponent, ScienceJokeComponent } from './portal/portal-demo';
@@ -143,7 +143,7 @@ import { PortalModule } from '@angular/cdk/portal';
     JazzDialogComponent,
     ListDemoComponent,
     LiveAnnouncerDemoComponent,
-    MdCheckboxDemoNestedChecklistComponent,
+    MatCheckboxDemoNestedChecklistComponent,
     MenuDemoComponent,
     OverlayDemoComponent,
     PortalDemoComponent,

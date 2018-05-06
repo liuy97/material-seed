@@ -24,9 +24,9 @@
 
 <div>
   Selected tab index:
-  <mat-input-container>
+  <mat-form-field>
     <input matInput type="number" [(ngModel)]="activeTabIndex">
-  </mat-input-container>
+  </mat-form-field>
 </div>
 
 <div class="demo-dynamic-tabs">
@@ -41,9 +41,9 @@
       </mat-checkbox>
       <div>
         Position:
-        <mat-input-container>
+        <mat-form-field>
           <input matInput type="number" [(ngModel)]="addTabPosition">
-        </mat-input-container>
+        </mat-form-field>
       </div>
       <button mat-raised-button color="primary"
               (click)="addTab(createWithLongContent)">
@@ -88,9 +88,9 @@
         </div>
         <br>
         <br>
-        <mat-input-container>
+        <mat-form-field>
           <input matInput placeholder="Tab Label" [(ngModel)]="tab.label">
-        </mat-input-container>
+        </mat-form-field>
         <br><br>
         <button mat-raised-button
                 [disabled]="dynamicTabs.length == 1"
@@ -140,9 +140,9 @@
       </div>
       <br>
       <br>
-      <mat-input-container>
+      <mat-form-field>
         <input matInput placeholder="Tab Label" [(ngModel)]="tab.label">
-      </mat-input-container>
+      </mat-form-field>
     </div>
   </mat-tab>
 </mat-tab-group>
@@ -186,9 +186,9 @@
       </div>
       <br>
       <br>
-      <mat-input-container>
+      <mat-form-field>
         <input matInput placeholder="Tab Label" [(ngModel)]="tab.label">
-      </mat-input-container>
+      </mat-form-field>
     </div>
   </mat-tab>
 </mat-tab-group>
@@ -216,9 +216,9 @@
       <br>
       <br>
       <br>
-      <mat-input-container>
+      <mat-form-field>
         <input matInput placeholder="Tab Label" [(ngModel)]="tab.label">
-      </mat-input-container>
+      </mat-form-field>
     </div>
   </mat-tab>
 </mat-tab-group>
