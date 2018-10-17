@@ -5,7 +5,7 @@ import { TooltipPosition } from '@angular/material';
   moduleId: module.id,
   selector: 'tooltip-demo',
   templateUrl: 'tooltip-demo.html',
-  styleUrls: ['tooltip-demo.css'],
+  styleUrls: ['tooltip-demo.scss'],
   encapsulation: ViewEncapsulation.None,
   preserveWhitespaces: false,
 })

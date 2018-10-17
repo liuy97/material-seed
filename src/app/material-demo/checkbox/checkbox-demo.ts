@@ -59,7 +59,7 @@ export class MatCheckboxDemoNestedChecklistComponent {
   moduleId: module.id,
   selector: 'mat-checkbox-demo',
   templateUrl: 'checkbox-demo.html',
-  styleUrls: ['checkbox-demo.css'],
+  styleUrls: ['checkbox-demo.scss'],
 })
 export class CheckboxDemoComponent {
   isIndeterminate: boolean = false;

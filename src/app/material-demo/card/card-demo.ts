@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'card-demo',
   templateUrl: 'card-demo.html',
-  styleUrls: ['card-demo.css'],
+  styleUrls: ['card-demo.scss'],
 })
 export class CardDemoComponent {}

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'progress-circle-demo',
   templateUrl: 'progress-circle-demo.html',
-  styleUrls: ['progress-circle-demo.css'],
+  styleUrls: ['progress-circle-demo.scss'],
 })
 export class ProgressCircleDemoComponent {
   progressValue: number = 60;

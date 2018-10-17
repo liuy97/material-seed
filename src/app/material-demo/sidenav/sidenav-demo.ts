@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   moduleId: module.id,
   selector: 'sidenav-demo',
   templateUrl: 'sidenav-demo.html',
-  styleUrls: ['sidenav-demo.css'],
+  styleUrls: ['sidenav-demo.scss'],
   encapsulation: ViewEncapsulation.None,
 })
 export class SidenavDemoComponent {

@@ -5,7 +5,7 @@ import { MatRipple } from '@angular/material';
   moduleId: module.id,
   selector: 'ripple-demo',
   templateUrl: 'ripple-demo.html',
-  styleUrls: ['ripple-demo.css'],
+  styleUrls: ['ripple-demo.scss'],
 })
 export class RippleDemoComponent {
   @ViewChild(MatRipple) ripple: MatRipple;

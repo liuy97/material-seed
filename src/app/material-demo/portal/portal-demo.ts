@@ -5,7 +5,7 @@ import {Component, QueryList, ViewChildren} from '@angular/core';
   moduleId: module.id,
   selector: 'portal-demo',
   templateUrl: 'portal-demo.html',
-  styleUrls: ['portal-demo.css'],
+  styleUrls: ['portal-demo.scss'],
 })
 export class PortalDemoComponent {
   @ViewChildren(CdkPortal) templatePortals: QueryList<Portal<any>>;

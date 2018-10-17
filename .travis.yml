@@ -20,4 +20,4 @@ cache:
   directories: node_modules
 
 script:
-  - ng test -config=./karma.conf.ci.js && ng build --prod
+  - ng test --karma-config ./src/karma.conf.ci.js && ng build --prod

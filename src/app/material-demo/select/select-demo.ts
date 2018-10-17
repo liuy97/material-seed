@@ -5,7 +5,7 @@ import { FormControl } from '@angular/forms';
     moduleId: module.id,
     selector: 'select-demo',
     templateUrl: 'select-demo.html',
-    styleUrls: ['select-demo.css'],
+    styleUrls: ['select-demo.scss'],
 })
 export class SelectDemoComponent {
   isRequired = false;

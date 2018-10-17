@@ -1,12 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 @Component({
   moduleId: module.id,
   selector: 'tabs-demo',
   templateUrl: 'tabs-demo.html',
-  styleUrls: ['tabs-demo.css'],
+  styleUrls: ['tabs-demo.scss'],
   encapsulation: ViewEncapsulation.None,
 })
 export class TabsDemoComponent {

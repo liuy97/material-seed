@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'button-demo',
   templateUrl: 'button-demo.html',
-  styleUrls: ['button-demo.css'],
+  styleUrls: ['button-demo.scss'],
 })
 export class ButtonDemoComponent {
   isDisabled: boolean = false;

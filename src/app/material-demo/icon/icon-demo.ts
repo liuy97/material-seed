@@ -6,7 +6,7 @@ import { MatIconRegistry } from '@angular/material';
   moduleId: module.id,
   selector: 'md-icon-demo',
   templateUrl: 'icon-demo.html',
-  styleUrls: ['icon-demo.css'],
+  styleUrls: ['icon-demo.scss'],
   viewProviders: [MatIconRegistry],
   encapsulation: ViewEncapsulation.None,
 })

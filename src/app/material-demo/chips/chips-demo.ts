@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'chips-demo',
   templateUrl: 'chips-demo.html',
-  styleUrls: ['chips-demo.css']
+  styleUrls: ['chips-demo.scss']
 })
 export class ChipsDemoComponent {
 }

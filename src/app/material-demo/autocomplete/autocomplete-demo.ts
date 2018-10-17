@@ -1,13 +1,13 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { FormControl, NgModel } from '@angular/forms';
-import {startWith} from 'rxjs/operators/startWith';
-import {map} from 'rxjs/operators/map'
+import {startWith} from 'rxjs/operators';
+import {map} from 'rxjs/operators'
 
 @Component({
   moduleId: module.id,
   selector: 'autocomplete-demo',
   templateUrl: 'autocomplete-demo.html',
-  styleUrls: ['autocomplete-demo.css'],
+  styleUrls: ['autocomplete-demo.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class AutocompleteDemoComponent {

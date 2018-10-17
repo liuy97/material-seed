@@ -6,7 +6,7 @@ import { MatDialog, MatDialogRef, MatDialogConfig, MAT_DIALOG_DATA } from '@angu
   moduleId: module.id,
   selector: 'dialog-demo',
   templateUrl: 'dialog-demo.html',
-  styleUrls: ['dialog-demo.css'],
+  styleUrls: ['dialog-demo.scss'],
 })
 export class DialogDemoComponent {
   dialogRef: MatDialogRef<JazzDialogComponent>;
