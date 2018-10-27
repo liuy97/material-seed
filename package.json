@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gh-pages": "ng build --prod && gh-pages -d dist/materia-seed"
+    "gh-pages": "ng build --prod --base-href=/material-seed/ && gh-pages -d dist/material-seed"
   },
   "private": true,
   "dependencies": {
