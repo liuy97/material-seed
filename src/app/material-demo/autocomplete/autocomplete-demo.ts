@@ -20,9 +20,9 @@ export class AutocompleteDemoComponent {
 
   tdDisabled = false;
 
-  @ViewChild(NgModel) modelDir: NgModel;
-  @ViewChild('reactiveAuto') reactiveAuto: any;
-  @ViewChild('tdAuto') tdAuto: any;
+  @ViewChild(NgModel, {static: true}) modelDir: NgModel;
+  @ViewChild('reactiveAuto', {static: true}) reactiveAuto: any;
+  @ViewChild('tdAuto', {static: true}) tdAuto: any;
 
   states = [
     {code: 'AL', name: 'Alabama'},

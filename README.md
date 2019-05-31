@@ -1,5 +1,5 @@
 # MaterialSeed
-Angular 7 + Material 7
+Angular 8 + Material 8
 [![Build Status](https://travis-ci.org/liuy97/material-seed.svg?branch=master)](https://travis-ci.org/liuy97/material-seed)
 
 ## Development server

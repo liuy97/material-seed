@@ -31,9 +31,9 @@ export class OverlayDemoComponent {
   tortelliniFillings = ['cheese and spinach', 'mushroom and broccoli'];
 
   @ViewChildren(TemplatePortalDirective) templatePortals: QueryList<Portal<any>>;
-  @ViewChild(CdkOverlayOrigin) _overlayOrigin: CdkOverlayOrigin;
-  @ViewChild('tortelliniOrigin') tortelliniOrigin: CdkOverlayOrigin;
-  @ViewChild('tortelliniTemplate') tortelliniTemplate: TemplatePortalDirective;
+  @ViewChild(CdkOverlayOrigin, {static: true}) _overlayOrigin: CdkOverlayOrigin;
+  @ViewChild('tortelliniOrigin', {static: true}) tortelliniOrigin: CdkOverlayOrigin;
+  @ViewChild('tortelliniTemplate', {static: true}) tortelliniTemplate: TemplatePortalDirective;
 
   constructor(public overlay: Overlay, public viewContainerRef: ViewContainerRef) { }
 

@@ -28,12 +28,12 @@ export class TableDemoComponent implements OnInit, AfterViewInit {
   matTableDataSourceColumns = ['select', 'userId', 'userName', 'progress', 'color'];
   selection = new SelectionModel<UserData>(true, []);
 
-  @ViewChild('filter') filter: ElementRef;
-  @ViewChild('paginatorForDataSource') paginatorForDataSource: MatPaginator;
-  @ViewChild('sortForDataSource') sortForDataSource: MatSort;
+  @ViewChild('filter', {static: true}) filter: ElementRef;
+  @ViewChild('paginatorForDataSource', {static: true}) paginatorForDataSource: MatPaginator;
+  @ViewChild('sortForDataSource', {static: true}) sortForDataSource: MatSort;
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   constructor(public _peopleDatabase: PeopleDatabase) {
     this.matTableDataSource.sortingDataAccessor = (data: UserData, property: string) => {
