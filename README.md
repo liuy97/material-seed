@@ -1,5 +1,7 @@
 # MaterialSeed
 Angular 8 + Material 8
+IVY is enabled
+
 [![Build Status](https://travis-ci.org/liuy97/material-seed.svg?branch=master)](https://travis-ci.org/liuy97/material-seed)
 
 ## Development server
